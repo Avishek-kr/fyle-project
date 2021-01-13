@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+/* main section CSS */
+
+nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 50px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    font-weight: bold;
+}
+
+nav button{
+    margin: 18px;  
+    padding:15px 35px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    border-radius:40px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #0F47C0;
+    color: #0F47C0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.wave{
+    position: absolute;
+    z-index: 1;
+    top: 7rem;
+    left: 3rem;
+    width: 60px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    position: relative;
+    top: 0.3rem;
+}
+
+.free{
+    background-color: #0F47C0;
+    color: white;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation ul li{
+    margin-left: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.navigation  h2{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+.main{
+    width: 100%;
+    height: 85%;
+    background-color: #F8F9FB;
+    display: flex;
+    position: relative;
+}
+
+.main-left, .main-right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.main-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 0 4rem;
+}
+
+.text-left h1{
+    font-size: 82px;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+    color: #181818;
+}
+
+.text-left p{
+    width: 80%;
+    margin: 40px 0;
+    font-size: 1.4rem;
+    color: #747474;
+}
+
+.text-left button{
+    background-color: black;
+    color: #fff;
+    border: none;
+    font-weight: 400;
+    padding:20px 35px;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    border-radius:40px;
+    cursor: pointer;
+}
+
+.main-right img{
+    width: 90%;
+    position: absolute;
+    bottom: -14%;
+    left: 14.2px;
+}
+
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100px;
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: -55px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 8px;
+    box-shadow: 0px 20px 80px #7474741A;
+}
+
+.brands img{
+    height: 40px;
+}
+
+/* Main section CSS ends */
+
+/* 2nd section CSS */
+.cat-heading{
+    text-align: center;
+    margin-top: 8rem;
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 0.84px;
+}
+
+/* cards */
+.card-container{
+    width: 60%;
+    margin: 2rem auto;
+}
+.cards-list ,#hide{
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .vector{
+    width: 55px;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+}
+
+  
+  .card .card_image .images {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 42px;
+  }
+  
+  .card .card_title {
+    text-align: left;
+    border-radius: 0px 0px 40px 40px;
+    position: absolute;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 100px;
+    left: 35px;
+    height: 40px;
+  }
+  
+  .card:hover {
+    transform: translate(10px,-20px);
+    box-shadow: 3px 3px 15px 2px rgba(0,0,0,0.2), 0px 0px 0px 0px rgba(0,0,0,0.22);
+  }
+  
+  
+  @media all and (max-width: 500px) {
+    .card-list {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+  
+  .card {
+    margin: 21px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.1);
+    transition: 0.4s;
+    }
+  
+    h6{
+        position: absolute;
+        top: 6rem;
+        color: #747474;
+    }
+
+  #hide{
+        display: none;
+    }
+
+.show-category{
+    background-color: black;
+    margin: 2rem;
+    color: #fff;
+    border: none;
+   padding:15px 80px;
+    -webkit-border-radius:30px; 
+     -moz-border-radius:30px;
+    border-radius:30px; 
+    cursor: pointer;
+    font-size: 1.2rem
+}
+
+.wrapper{
+    text-align: center;
+}
+
+  /* #hide{
+      display: block;
+  } */
